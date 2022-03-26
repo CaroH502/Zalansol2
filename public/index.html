@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zalansol</title>
+
+    <!-- Bloquer le viewport - ici, c'est une app! Pas de zoom. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <!-- Fonts google pour les icônes et la police par défaut -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" />
+
+    <!-- Stylesheet principale (main.css, car c'est le nom de sortie utilisé par Webpack) -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Lien vers le fichier manifest pour la PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Javascript principal (main.js, car c'est le nom de sortie utilisé par Webpack) -->
+    <!-- ...à quoi sert le defer ? :) -->
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
+      <div id="logo">
+        <img src="/images/logo_zalansol.png" />
+        Zalansol
+      </div>
+    </header>
+
+    <main>
+      <!-- ajouter la classe "active" à une section pour l'afficher -->
+      <!-- exemple : <section id="home-section" class="active"> -->
+
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="home-section" class="active">
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------>
+
+      <section id="products-section">
+        <h4>Produits</h4>
+
+        <div class="product-list">
+          <article class="product-list-item">
+            <button type="button" class="icon-button cart-button">
+              <span class="material-icons">add_shopping_cart</span>
+            </button>
+
+            <a href="#" class="product-list-item-image-wrapper">
+              <img src="http://placekitten.com/600/600" />
+            </a>
+
+            <div class="product-list-item-footer">
+              <div class="product-list-item-name">
+                Chemise
+              </div>
+
+              <a href="#" class="product-list-item-category">
+                Habit
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------------------------>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#home" class="active">
+          <span class="material-icons">home</span>
+          <span>Home</span>
+        </a>
+        <a href="#products">
+          <span class="material-icons">inventory_2</span>
+          <span>Produits</span>
+        </a>
+        <a href="#cart">
+          <span class="material-icons">shopping_cart</span>
+          <span>Panier</span>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
