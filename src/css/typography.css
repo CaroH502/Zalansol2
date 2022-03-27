@@ -42,6 +42,11 @@ h6 {
   font-size: 1.5rem;
 }
 
+.caption {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
 /* on va centrer verticalement par défaut, au lieu d'aligner à la baseline */
 .material-icons {
   vertical-align: middle;

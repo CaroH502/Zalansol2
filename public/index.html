@@ -31,12 +31,14 @@
     </header>
 
     <main>
-      <!-- ajouter la classe "active" à une section pour l'afficher -->
-      <!-- exemple : <section id="home-section" class="active"> -->
-
       <!------------------------------------------------------------------------------------------------------------>
 
       <section id="home-section" class="active">
+        <h1 class="hero">Bienvenue sur Zalansol</h1>
+        <p class="caption">
+          As a leading European online platform for fashion and lifestyle we deliver to customers in
+          23 countries. In our fashion store, they can find a wide assortment from more than 5,800 brands.
+        </p>
       </section>
 
       <!------------------------------------------------------------------------------------------------------------>
@@ -46,21 +48,27 @@
 
         <div class="product-list">
           <article class="product-list-item">
+            <!-- Utilisez ce bouton pour linker l'évent de l'ajout au panier -->
             <button type="button" class="icon-button cart-button">
+              <!-- Modifier cet icône pour montrer si l'article est dans le panier ou non. Son inverse est remove_shopping_cart -->
               <span class="material-icons">add_shopping_cart</span>
             </button>
 
+            <!-- Utilisez ce <a> pour lier l'url de la page du produit -->
             <a href="#" class="product-list-item-image-wrapper">
+              <!-- Utilisez cette image pour afficher l'image du produit -->
               <img src="http://placekitten.com/600/600" />
             </a>
 
             <div class="product-list-item-footer">
+              <!-- Utilisez ce <div> pour afficher le nom du produit -->
               <div class="product-list-item-name">
                 Chemise
               </div>
 
+              <!-- Utilisez ce <a> pour afficher le nom de la catégorie et lier l'url de la page de la catégorie -->
               <a href="#" class="product-list-item-category">
-                Habit
+                Habits
               </a>
             </div>
           </article>
