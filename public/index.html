@@ -15,12 +15,10 @@
     <link rel="stylesheet" href="main.css" />
 
     <!-- Javascript principal (main.js, car c'est le nom de sortie utilisé par Webpack) -->
-    <!-- ...à quoi sert le defer ? :) -->
     <script src="main.js" defer></script>
   </head>
   <body>
     <header>
-      <!-- ajouter la classe "animated" à #logo pour animer l'icône -->
       <div id="logo">
         <img src="/images/logo_zalansol.png" />
         Zalansol
@@ -52,7 +50,7 @@
             </button>
 
             <!-- Utilisez ce <a> pour lier l'url de la page du produit -->
-            <a href="#" class="product-list-item-image-wrapper">
+            <a href="#products-[id]" class="product-list-item-image-wrapper">
               <!-- Utilisez cette image pour afficher l'image du produit -->
               <img src="http://placekitten.com/600/600" />
             </a>
@@ -64,7 +62,7 @@
               </div>
 
               <!-- Utilisez ce <a> pour afficher le nom de la catégorie et lier l'url de la page de la catégorie -->
-              <a href="#" class="product-list-item-category">
+              <a href="#categories-[id]" class="product-list-item-category">
                 Habits
               </a>
             </div>
