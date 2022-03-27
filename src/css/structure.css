@@ -165,3 +165,32 @@ footer nav a .material-icons {
     display: none;
   }
 }
+
+/********************************************************************************/
+/* product */
+
+.product-category-link {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  text-decoration: none;
+  outline: none;
+}
+
+.product-category-link:before {
+  font-family: 'Material Icons';
+  content: 'label';
+  vertical-align: middle;
+  color: var(--primary-color);
+}
+
+.product-image-wrapper {
+  display: block;
+  height: 300px;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
